@@ -17,6 +17,6 @@ jobs:
           key: ${{ secrets.SERVER_SSH_KEY }}
           script: |
             # Thư mục này sẽ được tạo ở bước tiếp theo trên server
-            cd /home/ubuntu/test-github-ci
+            cd ~/test-github-ci
             git pull origin main
             docker compose up -d --build
